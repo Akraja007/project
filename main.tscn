@@ -1,0 +1,140 @@
+[gd_scene load_steps=16 format=3 uid="uid://c8x2myah6myno"]
+
+[ext_resource type="Texture2D" uid="uid://b6wd75xeffm5h" path="res://art/block.png" id="1_gtt6q"]
+[ext_resource type="Script" path="res://TileMap.gd" id="2_2vsd3"]
+[ext_resource type="Texture2D" uid="uid://twojghnrls1" path="res://art/fixed block.png" id="2_7aaa5"]
+[ext_resource type="Texture2D" uid="uid://b83rw6i26argl" path="res://art/right bottem.png" id="3_2wh7j"]
+[ext_resource type="Texture2D" uid="uid://cd3wfnlhxha46" path="res://art/spikl.png" id="4_kxa07"]
+[ext_resource type="Texture2D" uid="uid://qmrkqe17tqlk" path="res://art/springl.png" id="5_2jsc6"]
+[ext_resource type="PackedScene" uid="uid://mhesquaijfb2" path="res://ball.tscn" id="8_ep281"]
+[ext_resource type="Script" path="res://sloat.gd" id="8_ub4w5"]
+[ext_resource type="Resource" uid="uid://bkisbgdqpjxrq" path="res://OBJ_data/block.tres" id="8_w40s7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ltlf5"]
+texture = ExtResource("1_gtt6q")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nkhhu"]
+texture = ExtResource("2_7aaa5")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_osxyi"]
+texture = ExtResource("3_2wh7j")
+texture_region_size = Vector2i(48, 48)
+0:0/next_alternative_id = 4
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/1/flip_v = true
+0:0/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/1/physics_layer_0/angular_velocity = 0.0
+0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 24, -24, -24, 24, -24)
+0:0/2 = 2
+0:0/2/flip_h = true
+0:0/2/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/2/physics_layer_0/angular_velocity = 0.0
+0:0/2/physics_layer_0/polygon_0/points = PackedVector2Array(24, 24, -24, 24, -24, -24)
+0:0/3 = 3
+0:0/3/flip_v = true
+0:0/3/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/3/physics_layer_0/angular_velocity = 0.0
+0:0/3/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g6ypj"]
+texture = ExtResource("4_kxa07")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.25, -1.25, -5.75, 19.75, 3.75, -1.25, 11.25, 19.25, 15.25, -0.25, 24, 24, -24, 24)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jueuv"]
+texture = ExtResource("5_2jsc6")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[sub_resource type="TileSet" id="TileSet_f7kru"]
+tile_size = Vector2i(48, 48)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ltlf5")
+sources/1 = SubResource("TileSetAtlasSource_nkhhu")
+sources/2 = SubResource("TileSetAtlasSource_osxyi")
+sources/3 = SubResource("TileSetAtlasSource_g6ypj")
+sources/4 = SubResource("TileSetAtlasSource_jueuv")
+
+[node name="main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+modulate = Color(0.584314, 0.584314, 0.584314, 1)
+tile_set = SubResource("TileSet_f7kru")
+format = 2
+layer_0/tile_data = PackedInt32Array(327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 393221, 3, 0, 393222, 3, 0, 393223, 3, 0, 393224, 3, 0, 393225, 3, 0, 393226, 3, 0, 393227, 3, 0, 393228, 3, 0, 393229, 3, 0, 393220, 0, 0, 393219, 0, 0, 393218, 0, 0, 393217, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 262146, 0, 0, 262145, 0, 0, 196609, 0, 0, 196608, 0, 0, 262143, 0, 0, 262144, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, 327684, 2, 131072, 262147, 2, 131072, 196610, 2, 131072, 131073, 2, 131072, 131072, 0, 0, 196607, 0, 0, 131071, 0, 0)
+script = ExtResource("2_2vsd3")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 136.0
+offset_right = 447.0
+offset_bottom = 290.0
+
+[node name="GridContainer" type="GridContainer" parent="Control/Panel"]
+modulate = Color(0.819608, 0.0666667, 0.254902, 1)
+texture_filter = 1
+layout_mode = 0
+offset_right = 236.0
+offset_bottom = 155.0
+columns = 2
+
+[node name="TextureRect1" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="TextureRect4" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="TextureRect5" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="TextureRect6" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+script = ExtResource("8_ub4w5")
+data = ExtResource("8_w40s7")
+
+[node name="ball" parent="." instance=ExtResource("8_ep281")]
+position = Vector2(111, 82)
