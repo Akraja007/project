@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c8x2myah6myno"]
+[gd_scene load_steps=18 format=3 uid="uid://c8x2myah6myno"]
 
 [ext_resource type="Texture2D" uid="uid://b6wd75xeffm5h" path="res://art/block.png" id="1_gtt6q"]
 [ext_resource type="Script" path="res://TileMap.gd" id="2_2vsd3"]
@@ -6,9 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://b83rw6i26argl" path="res://art/right bottem.png" id="3_2wh7j"]
 [ext_resource type="Texture2D" uid="uid://cd3wfnlhxha46" path="res://art/spikl.png" id="4_kxa07"]
 [ext_resource type="Texture2D" uid="uid://qmrkqe17tqlk" path="res://art/springl.png" id="5_2jsc6"]
-[ext_resource type="PackedScene" uid="uid://mhesquaijfb2" path="res://ball.tscn" id="8_ep281"]
-[ext_resource type="Script" path="res://sloat.gd" id="8_ub4w5"]
-[ext_resource type="Resource" uid="uid://bkisbgdqpjxrq" path="res://OBJ_data/block.tres" id="8_w40s7"]
+[ext_resource type="PackedScene" uid="uid://dgyrkuieracf1" path="res://spring.tscn" id="6_2g6ek"]
+[ext_resource type="Script" path="res://sloat1.gd" id="7_cej5t"]
+[ext_resource type="Resource" uid="uid://c0iurut7vqnhk" path="res://OBJ_data/ball_data.tres" id="8_n7nym"]
+[ext_resource type="Resource" uid="uid://ch1s3n3y8f5bv" path="res://OBJ_data/righ_data.tres" id="9_l3pef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ltlf5"]
 texture = ExtResource("1_gtt6q")
@@ -67,6 +68,9 @@ texture_region_size = Vector2i(48, 48)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8yvfb"]
+scenes/6/scene = ExtResource("6_2g6ek")
+
 [sub_resource type="TileSet" id="TileSet_f7kru"]
 tile_size = Vector2i(48, 48)
 physics_layer_0/collision_layer = 1
@@ -75,6 +79,7 @@ sources/1 = SubResource("TileSetAtlasSource_nkhhu")
 sources/2 = SubResource("TileSetAtlasSource_osxyi")
 sources/3 = SubResource("TileSetAtlasSource_g6ypj")
 sources/4 = SubResource("TileSetAtlasSource_jueuv")
+sources/5 = SubResource("TileSetScenesCollectionSource_8yvfb")
 
 [node name="main" type="Node2D"]
 
@@ -82,7 +87,7 @@ sources/4 = SubResource("TileSetAtlasSource_jueuv")
 modulate = Color(0.584314, 0.584314, 0.584314, 1)
 tile_set = SubResource("TileSet_f7kru")
 format = 2
-layer_0/tile_data = PackedInt32Array(327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 393221, 3, 0, 393222, 3, 0, 393223, 3, 0, 393224, 3, 0, 393225, 3, 0, 393226, 3, 0, 393227, 3, 0, 393228, 3, 0, 393229, 3, 0, 393220, 0, 0, 393219, 0, 0, 393218, 0, 0, 393217, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 262146, 0, 0, 262145, 0, 0, 196609, 0, 0, 196608, 0, 0, 262143, 0, 0, 262144, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, 327684, 2, 131072, 262147, 2, 131072, 196610, 2, 131072, 131073, 2, 131072, 131072, 0, 0, 196607, 0, 0, 131071, 0, 0)
+layer_0/tile_data = PackedInt32Array(327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 393221, 5, 393216, 393222, 3, 0, 393223, 3, 0, 393224, 3, 0, 393225, 3, 0, 393226, 3, 0, 393227, 3, 0, 393228, 3, 0, 393229, 3, 0, 393220, 0, 0, 393219, 0, 0, 393218, 0, 0, 393217, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 262146, 0, 0, 262145, 0, 0, 196609, 0, 0, 196608, 0, 0, 262143, 0, 0, 262144, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, 327684, 2, 131072, 262147, 2, 131072, 196610, 2, 131072, 131073, 2, 131072, 131072, 0, 0, 196607, 0, 0, 131071, 0, 0, 458762, 1, 0)
 script = ExtResource("2_2vsd3")
 
 [node name="Control" type="Control" parent="."]
@@ -106,35 +111,17 @@ offset_right = 236.0
 offset_bottom = 155.0
 columns = 2
 
-[node name="TextureRect1" type="TextureRect" parent="Control/Panel/GridContainer"]
+[node name="sloat1" type="TextureRect" parent="Control/Panel/GridContainer"]
 layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
+script = ExtResource("7_cej5t")
+data = ExtResource("8_n7nym")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/Panel/GridContainer"]
+[node name="sloat2" type="TextureRect" parent="Control/Panel/GridContainer"]
 layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
+script = ExtResource("7_cej5t")
+data = ExtResource("9_l3pef")
 
-[node name="TextureRect3" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
-
-[node name="TextureRect4" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
-
-[node name="TextureRect5" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
-
-[node name="TextureRect6" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("8_ub4w5")
-data = ExtResource("8_w40s7")
-
-[node name="ball" parent="." instance=ExtResource("8_ep281")]
-position = Vector2(111, 82)
+[connection signal="gui_input" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_gui_input"]
+[connection signal="on_drag" from="Control/Panel/GridContainer/sloat1" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="gui_input" from="Control/Panel/GridContainer/sloat2" to="Control/Panel/GridContainer/sloat2" method="_on_gui_input"]
+[connection signal="on_drag" from="Control/Panel/GridContainer/sloat2" to="TileMap" method="_on_sloat_on_drag"]
