@@ -1,11 +1,13 @@
 extends TileMap
+@onready var ball_scene = preload("res://ball.tscn")
+var mouse_pos:Vector2
 
-var ondrag :bool =false
-
-
-func _input(event):
-	if event.is_action_pressed("select") and ondrag:
-		var clicked_cell: Vector2i = local_to_map(get_local_mouse_position())
-		set_cell(0,clicked_cell,1,Vector2.ONE)
-		
-
+func _on_sloat_on_drag(data):
+	mouse_pos=local_to_map(data.mouse_pos)
+	if not data.id== 0:
+		set_cell(0,mouse_pos,data.id,data.coordinate,2)
+	else :
+		var ball = ball_scene.instantiate()
+		get_parent().add_child(ball)
+		ball.position = data.mouse_pos
+	pass # Replace with function body.
