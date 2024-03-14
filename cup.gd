@@ -1,7 +1,8 @@
 extends Area2D
 
 func _on_body_entered(body):
-	print("level over")
+	if body.name=="ball":
+		print("level over")
 	pass # Replace with function body.
 
 

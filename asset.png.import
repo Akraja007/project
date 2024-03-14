@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b83rw6i26argl"
-path="res://.godot/imported/right bottem.png-66a21c12d06a0dd948d28d587808ed12.ctex"
+uid="uid://hwm67h6rhdhj"
+path="res://.godot/imported/asset.png-12850c19b23e48f92afa71f8e6e1b24d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/right bottem.png"
-dest_files=["res://.godot/imported/right bottem.png-66a21c12d06a0dd948d28d587808ed12.ctex"]
+source_file="res://asset.png"
+dest_files=["res://.godot/imported/asset.png-12850c19b23e48f92afa71f8e6e1b24d.ctex"]
 
 [params]
 

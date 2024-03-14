@@ -5,7 +5,8 @@ signal on_drag(data:OBJ)
 var DATA:int
 
 func _ready():
-	texture=data.texture
+	if not texture == null:
+		texture=data.texture
 	pass
 
 func _process(delta):

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd3wfnlhxha46"
-path="res://.godot/imported/spikl.png-ea6dc26c0dc492bebf2073dc807f378c.ctex"
+uid="uid://d1kqxsexcb88r"
+path="res://.godot/imported/tile008.png-19c55e0e21060ad2188f34760485ff79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/spikl.png"
-dest_files=["res://.godot/imported/spikl.png-ea6dc26c0dc492bebf2073dc807f378c.ctex"]
+source_file="res://assets/tile008.png"
+dest_files=["res://.godot/imported/tile008.png-19c55e0e21060ad2188f34760485ff79.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qmrkqe17tqlk"
-path="res://.godot/imported/springl.png-f67f6e7b8575f49a96c80bdb406ee90c.ctex"
+uid="uid://cwgqxcgv2qkwd"
+path="res://.godot/imported/tile005.png-732f083af60a6b7ec03f83ff29646e60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/springl.png"
-dest_files=["res://.godot/imported/springl.png-f67f6e7b8575f49a96c80bdb406ee90c.ctex"]
+source_file="res://assets/tile005.png"
+dest_files=["res://.godot/imported/tile005.png-732f083af60a6b7ec03f83ff29646e60.ctex"]
 
 [params]
 
