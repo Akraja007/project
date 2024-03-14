@@ -1,9 +1,8 @@
-res://cup.tscn
 res://main.tscn
-res://ui/main_menu.tscn
 res://spring.tscn
 res://ball.tscn
-res://cup.gd
-res://spring.gd
-res://God.gd
-res://OBJ_data/ball_data.tres
+res://cup.tscn
+res://sloat1.gd
+res://OBJ_data/up_left.tres
+res://TileMap.gd
+res://OBJECT.gd

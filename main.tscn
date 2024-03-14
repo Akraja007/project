@@ -126,35 +126,17 @@ texture = ExtResource("5_xiypc")
 script = ExtResource("7_cej5t")
 data = ExtResource("7_m454d")
 
-[node name="Up_right" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("7_cej5t")
-
-[node name="Down_left" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("7_cej5t")
-
-[node name="Down_right" type="TextureRect" parent="Control/Panel/GridContainer"]
-layout_mode = 2
-script = ExtResource("7_cej5t")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(384, 290)
 
-[connection signal="body_entered" from="TileMap/spring" to="TileMap/spring" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89850" to="TileMap/@Area2D@89850" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89851" to="TileMap/@Area2D@89851" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89852" to="TileMap/@Area2D@89852" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89853" to="TileMap/@Area2D@89853" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89854" to="TileMap/@Area2D@89854" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89855" to="TileMap/@Area2D@89855" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89856" to="TileMap/@Area2D@89856" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@89857" to="TileMap/@Area2D@89857" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24000" to="TileMap/@Area2D@24000" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24001" to="TileMap/@Area2D@24001" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24002" to="TileMap/@Area2D@24002" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24003" to="TileMap/@Area2D@24003" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24004" to="TileMap/@Area2D@24004" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24005" to="TileMap/@Area2D@24005" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24006" to="TileMap/@Area2D@24006" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24007" to="TileMap/@Area2D@24007" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@24008" to="TileMap/@Area2D@24008" method="_on_body_entered" flags=18]
 [connection signal="gui_input" from="Control/Panel/GridContainer/Up_left" to="Control/Panel/GridContainer/Up_left" method="_on_gui_input"]
 [connection signal="on_drag" from="Control/Panel/GridContainer/Up_left" to="TileMap" method="_on_sloat_on_drag"]
-[connection signal="gui_input" from="Control/Panel/GridContainer/Up_right" to="Control/Panel/GridContainer/Up_right" method="_on_gui_input"]
-[connection signal="on_drag" from="Control/Panel/GridContainer/Up_right" to="TileMap" method="_on_sloat_on_drag"]
-[connection signal="gui_input" from="Control/Panel/GridContainer/Down_left" to="Control/Panel/GridContainer/Down_left" method="_on_gui_input"]
-[connection signal="on_drag" from="Control/Panel/GridContainer/Down_left" to="TileMap" method="_on_sloat_on_drag"]
-[connection signal="gui_input" from="Control/Panel/GridContainer/Down_right" to="Control/Panel/GridContainer/Down_right" method="_on_gui_input"]
-[connection signal="on_drag" from="Control/Panel/GridContainer/Down_right" to="TileMap" method="_on_sloat_on_drag"]

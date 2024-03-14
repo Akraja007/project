@@ -5,7 +5,7 @@ var mouse_pos:Vector2
 func _on_sloat_on_drag(data):
 	mouse_pos=local_to_map(data.mouse_pos)
 	if not data.id== 0:
-		set_cell(0,mouse_pos,data.id,data.coordinate,2)
+		set_cell(0,mouse_pos,data.id,data.coordinate)
 	else :
 		var ball = ball_scene.instantiate()
 		get_parent().add_child(ball)

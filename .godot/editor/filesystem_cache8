@@ -1,27 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710408236
+::res://::1710409794
 asset.png::CompressedTexture2D::537523872572121323::1710395146::1710395163::1::::<><>::
-ball.tscn::PackedScene::856992651476901913::1710408065::0::1::::<><>::uid://cg7pbo6knxf72::::res://art/ball.png
+ball.tscn::PackedScene::856992651476901913::1710408483::0::1::::<><>::uid://yw2p1a3xvn61::::res://assets/ball.png
 cup.gd::GDScript::-1::1710405710::0::1::::<>Area2D<>::
-cup.tscn::PackedScene::7235210234061274708::1710408066::0::1::::<><>::res://cup.gd<>uid://3eaxbmv8b6v::::res://assets/bucket.png
+cup.tscn::PackedScene::7235210234061274708::1710408483::0::1::::<><>::res://cup.gd<>uid://3eaxbmv8b6v::::res://assets/bucket.png
 God.gd::GDScript::-1::1710406794::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::3909532363361283765::1709193269::1709193332::1::::<><>::
-main.tscn::PackedScene::7138215945036576600::1710408236::0::1::::<><>::uid://cg7pbo6knxf72::::res://art/ball.png<>res://TileMap.gd<>uid://hwm67h6rhdhj::::res://asset.png<>uid://dbc14c6xo718k::::res://cup.tscn<>uid://dgyrkuieracf1::::res://spring.tscn<>res://sloat1.gd
+main.tscn::PackedScene::7138215945036576600::1710408716::0::1::::<><>::res://TileMap.gd<>uid://hwm67h6rhdhj::::res://asset.png<>uid://dbc14c6xo718k::::res://cup.tscn<>uid://3x4l3bq37rs0::::res://assets/tile001.png<>uid://dgyrkuieracf1::::res://spring.tscn<>res://sloat1.gd<>uid://u0l7fh01q4v2::::res://OBJ_data/up_left.tres
 OBJECT.gd::GDScript::-1::1710391361::0::1::::OBJ<>Resource<>::
 sloat1.gd::GDScript::-1::1710396334::0::1::::<>TextureRect<>::
 sloat.gd::GDScript::-1::1710391238::0::1::::<>TextureRect<>::
 spring.gd::GDScript::-1::1710406707::0::1::::<>Area2D<>::
-spring.tscn::PackedScene::7630991288850911068::1710408065::0::1::::<><>::res://spring.gd<>uid://cbg2uadeq33ao::::res://assets/tile009.png
+spring.tscn::PackedScene::7630991288850911068::1710408482::0::1::::<><>::res://spring.gd<>uid://cbg2uadeq33ao::::res://assets/tile009.png
 TileMap.gd::GDScript::-1::1710391360::0::1::::<>TileMap<>::
-::res://art/::1709193332
-ball.png::CompressedTexture2D::5260947841718187511::1709193269::1709193332::1::::<><>::
-block.png::CompressedTexture2D::4607932054864316779::1709193269::1709193332::1::::<><>::
-fixed block.png::CompressedTexture2D::40584434597746146::1709193269::1709193332::1::::<><>::
-right bottem.png::CompressedTexture2D::4761528219055273579::1709193269::1709193332::1::::<><>::
-spikl.png::CompressedTexture2D::5042555878369819969::1709193269::1709193332::1::::<><>::
-springl.png::CompressedTexture2D::1148844925850983704::1709193269::1709193332::1::::<><>::
-tilesprite.png::CompressedTexture2D::2460653723524815117::1709193269::1709193332::1::::<><>::
-::res://assets/::1710408439
+::res://assets/::1710408442
 ball.png::CompressedTexture2D::1731616070526233092::1710408439::1710408442::1::::<><>::
 bucket.png::CompressedTexture2D::58046655241184719::1710405567::1710405569::1::::<><>::
 tile000.png::CompressedTexture2D::8018288178521157433::1710398525::1710398700::1::::<><>::
@@ -40,7 +32,8 @@ tile012.png::CompressedTexture2D::4955429475086981864::1710398525::1710398700::1
 tile013.png::CompressedTexture2D::2476017721984992490::1710398525::1710398700::1::::<><>::
 tile014.png::CompressedTexture2D::1815700396216695321::1710398525::1710398700::1::::<><>::
 tile015.png::CompressedTexture2D::2723496179827984210::1710398525::1710398700::1::::<><>::
-::res://OBJ_data/::1710408103
+::res://OBJ_data/::1710408702
+up_left.tres::Resource/OBJ::1456111623539204953::1710408702::0::1::::<><>::res://OBJECT.gd<>uid://3x4l3bq37rs0::::res://assets/tile001.png
 ::res://ui/::1710407500
 main_menu.gd::GDScript::-1::1710391309::0::1::::<>Control<>::
 main_menu.tscn::PackedScene::3960804816777711630::1710407500::0::1::::<><>::res://ui/main_menu.gd<>uid://bvx2orokvdngn::::res://icon.svg<>uid://c8x2myah6myno::::res://main.tscn

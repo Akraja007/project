@@ -1,3 +1,4 @@
+@tool
 extends TextureRect
 
 @export var data :OBJ =null 
@@ -5,8 +6,8 @@ signal on_drag(data:OBJ)
 var DATA:int
 
 func _ready():
-	if not texture == null:
-		texture=data.texture
+	texture=data.texture
+	
 	pass
 
 func _process(delta):
