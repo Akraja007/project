@@ -1,0 +1,149 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwov42n570dus"]
+
+[ext_resource type="Script" path="res://ui/main_menu.gd" id="1_csryh"]
+[ext_resource type="Texture2D" uid="uid://bvx2orokvdngn" path="res://icon.svg" id="1_fss1i"]
+[ext_resource type="PackedScene" uid="uid://c8x2myah6myno" path="res://main.tscn" id="2_sxiy0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7rd8f"]
+font_size = 30
+font_color = Color(0.878431, 0.984314, 0.988235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gv6fg"]
+bg_color = Color(0.164706, 0.615686, 0.560784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxj2f"]
+bg_color = Color(0.164706, 0.615686, 0.560784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uoboc"]
+bg_color = Color(0.164706, 0.615686, 0.560784, 1)
+
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_csryh")
+start = ExtResource("2_sxiy0")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.14902, 0.27451, 0.32549, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -320.0
+offset_right = 320.0
+offset_bottom = 160.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "THE WORLD BEST GAME"
+label_settings = SubResource("LabelSettings_7rd8f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 360.0
+alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="start_button" type="Button" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.768627, 0.415686, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_gv6fg")
+text = "START"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="credit_button" type="Button" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.768627, 0.415686, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_fxj2f")
+text = "CREDIT"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 40
+
+[node name="exit_button" type="Button" parent="VBoxContainer/MarginContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.768627, 0.415686, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_uoboc")
+text = "EXIT"
+
+[node name="how to play Container" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -180.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="how to play Container"]
+self_modulate = Color(0.439216, 0.439216, 0.439216, 1)
+layout_mode = 2
+texture = ExtResource("1_fss1i")
+
+[node name="Label" type="Label" parent="how to play Container"]
+self_modulate = Color(0.847059, 0.952941, 0, 1)
+layout_mode = 2
+text = "HOW TO PLAY"
+
+[node name="CREDIT Container" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -4.0
+offset_bottom = 150.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CREDIT Container"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+
+[node name="Label" type="Label" parent="CREDIT Container/MarginContainer"]
+layout_mode = 2
+text = "
+DEVELOPER  :  RAJA
+DESINER        :     ,,
+ARTSIST         :     ,,
+MUSIC            :     ,,"
+autowrap_mode = 3
+
+[connection signal="button_down" from="VBoxContainer/MarginContainer/start_button" to="." method="_on_start_button_button_down"]
+[connection signal="toggled" from="VBoxContainer/MarginContainer2/credit_button" to="." method="_on_credit_button_toggled"]
+[connection signal="button_down" from="VBoxContainer/MarginContainer3/exit_button" to="." method="_on_exit_button_button_down"]

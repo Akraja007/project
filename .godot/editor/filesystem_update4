@@ -1,10 +1,1 @@
-res://main.tscn
-res://ball.tscn
-res://testcase/testcase.tscn
-res://testcase/TextureRect.gd
-res://sloat1.gd
-res://OBJ_data/block.tres
-res://TileMap.gd
-res://OBJECT.gd
-res://spring.gd
-res://spring.tscn
+res://ui/main_menu.tscn
