@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c8x2myah6myno"]
+[gd_scene load_steps=18 format=3 uid="uid://c8x2myah6myno"]
 
 [ext_resource type="Texture2D" uid="uid://hwm67h6rhdhj" path="res://asset.png" id="1_uteq3"]
 [ext_resource type="PackedScene" uid="uid://dgyrkuieracf1" path="res://scene/spring.tscn" id="2_4v8jc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d1kqxsexcb88r" path="res://assets/tile008.png" id="5_b03wc"]
 [ext_resource type="Script" path="res://script/sloat.gd" id="6_ugf3c"]
 [ext_resource type="Script" path="res://OBJECT.gd" id="7_1ltxq"]
+[ext_resource type="Texture2D" uid="uid://cbg2uadeq33ao" path="res://assets/tile009.png" id="9_3y4rc"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vocav"]
 load_path = "res://.godot/imported/ball.png-1388bb79de1d1a8787b7f73c96559b11.ctex"
@@ -26,61 +27,76 @@ texture_region_size = Vector2i(48, 48)
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:0/0/custom_data_0 = true
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
+1:0/0/custom_data_0 = true
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
+2:0/0/custom_data_0 = true
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:0/0/custom_data_0 = true
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
+0:1/0/custom_data_0 = true
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/custom_data_0 = true
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:1/0/custom_data_0 = true
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
+3:1/0/custom_data_0 = true
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
+0:2/0/custom_data_0 = true
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, 24, 16.0867, -9.54594, 6.89429, 20.8596, 0.176777, -10.9602, -9.01561, 20.5061, -16.4402, -9.54594, -24, 24)
+2:2/0/custom_data_0 = true
 3:2/0 = 0
 3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:2/0/physics_layer_0/angular_velocity = 0.0
 3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
+3:2/0/custom_data_0 = true
 0:3/0 = 0
 0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_0/angular_velocity = 0.0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:3/0/custom_data_0 = true
 1:3/0 = 0
 1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_0/angular_velocity = 0.0
 1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
+1:3/0/custom_data_0 = true
 2:3/0 = 0
 2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:3/0/physics_layer_0/angular_velocity = 0.0
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
+2:3/0/custom_data_0 = true
 3:3/0 = 0
 3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:3/0/physics_layer_0/angular_velocity = 0.0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:3/0/custom_data_0 = true
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vncyl"]
 scenes/3/scene = ExtResource("2_4v8jc")
@@ -96,24 +112,33 @@ texture_region_size = Vector2i(48, 48)
 [sub_resource type="TileSet" id="TileSet_f7kru"]
 tile_size = Vector2i(48, 48)
 physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "is_placable"
+custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_i4prv")
 sources/1 = SubResource("TileSetAtlasSource_td4at")
 sources/2 = SubResource("TileSetScenesCollectionSource_vncyl")
 sources/5 = SubResource("TileSetAtlasSource_xmh0m")
 
-[sub_resource type="Resource" id="Resource_bydty"]
+[sub_resource type="Resource" id="Resource_qmmod"]
 script = ExtResource("7_1ltxq")
 texture = ExtResource("5_b03wc")
 coordinate = Vector2i(0, 2)
 id = 1
 
+[sub_resource type="Resource" id="Resource_7dwn2"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("9_3y4rc")
+coordinate = Vector2i(0, 0)
+id = 3
+
 [node name="main" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+unique_name_in_owner = true
 tile_set = SubResource("TileSet_f7kru")
 format = 2
 layer_0/name = "world"
-layer_0/tile_data = PackedInt32Array(65536, 1, 2, 131072, 1, 3, 131073, 65537, 3, 196610, 1, 2, 262146, 1, 3, 262147, 65537, 3, 327684, 1, 2, 393220, 1, 3, 458757, 1, 3, 196608, 65537, 1, 196609, 1, 3, 262144, 65537, 1, 262145, 65537, 1, 327683, 1, 3, 327682, 65537, 1, 327681, 65537, 1, 327680, 65537, 1, 393216, 65537, 1, 458752, 65537, 1, 524288, 65537, 1, 524289, 65537, 1, 524290, 65537, 1, 524291, 65537, 1, 524292, 65537, 1, 458756, 65537, 1, 458755, 65537, 1, 458754, 65537, 1, 458753, 65537, 1, 393217, 65537, 1, 393218, 65537, 1, 393219, 65537, 1, 524293, 65537, 1, 458758, 131073, 1, 458759, 131073, 1, 458760, 131073, 1, 458761, 131073, 1, 458762, 131073, 1, 458763, 131073, 1, 458764, 131073, 1, 458765, 131073, 1, 458766, 131073, 1, 524294, 65537, 1, 524295, 65537, 1, 524296, 65537, 1, 524297, 65537, 1, 524298, 65537, 1, 524299, 65537, 1, 524300, 65537, 1, 524301, 65537, 1, 524302, 65537, 1, 393227, 131073, 2, 393226, 131073, 2, 393228, 2, 262144, 393221, 131073, 1, 393225, 131073, 2, 393224, 131073, 2)
+layer_0/tile_data = PackedInt32Array(65536, 1, 2, 131072, 1, 3, 131073, 65537, 3, 196610, 1, 2, 262146, 1, 3, 262147, 65537, 3, 327684, 1, 2, 393220, 1, 3, 196608, 65537, 1, 196609, 1, 3, 262144, 65537, 1, 262145, 65537, 1, 327683, 1, 3, 327682, 65537, 1, 327681, 65537, 1, 327680, 65537, 1, 393216, 65537, 1, 458752, 65537, 1, 524288, 65537, 1, 524289, 65537, 1, 524290, 65537, 1, 524291, 65537, 1, 524292, 65537, 1, 458756, 65537, 1, 458755, 65537, 1, 458754, 65537, 1, 458753, 65537, 1, 393217, 65537, 1, 393218, 65537, 1, 393219, 65537, 1, 393227, 2, 262144, 393225, 131073, 2, 393224, 131073, 2, 393221, 1, 2, 458757, 1, 3, 458758, 131073, 1, 458759, 131073, 1, 458760, 131073, 1, 458761, 131073, 1, 458762, 131073, 1, 458763, 131073, 1, 458764, 131073, 1, 458765, 131073, 1, 524293, 65537, 1, 524294, 65537, 1, 524295, 65537, 1, 524296, 65537, 1, 524297, 65537, 1, 524298, 65537, 1, 524299, 65537, 1, 524300, 65537, 1, 524301, 65537, 1, 393228, 2, 262144, 393226, 2, 262144)
 layer_1/name = "select"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -151,7 +176,13 @@ columns = 2
 layout_mode = 2
 texture = ExtResource("5_b03wc")
 script = ExtResource("6_ugf3c")
-data = SubResource("Resource_bydty")
+data = SubResource("Resource_qmmod")
+
+[node name="sloat2" type="TextureRect" parent="Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("9_3y4rc")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_7dwn2")
 
 [node name="simulation" type="Button" parent="Control"]
 layout_mode = 0
@@ -164,10 +195,14 @@ text = "ball simulate"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(384, 290)
 
-[connection signal="body_entered" from="TileMap/cup" to="TileMap/cup" method="_on_body_entered" flags=18]
 [connection signal="gui_input" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_gui_input"]
 [connection signal="mouse_entered" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_exited"]
 [connection signal="on_drag" from="Control/Panel/GridContainer/sloat1" to="TileMap" method="_on_sloat_on_drag"]
 [connection signal="property_list_changed" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_property_list_changed"]
+[connection signal="gui_input" from="Control/Panel/GridContainer/sloat2" to="Control/Panel/GridContainer/sloat2" method="_on_gui_input"]
+[connection signal="mouse_entered" from="Control/Panel/GridContainer/sloat2" to="Control/Panel/GridContainer/sloat2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control/Panel/GridContainer/sloat2" to="Control/Panel/GridContainer/sloat2" method="_on_mouse_exited"]
+[connection signal="on_drag" from="Control/Panel/GridContainer/sloat2" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="Control/Panel/GridContainer/sloat2" to="Control/Panel/GridContainer/sloat2" method="_on_property_list_changed"]
 [connection signal="button_down" from="Control/simulation" to="TileMap" method="_on_simulation_button_down"]

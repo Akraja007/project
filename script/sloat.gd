@@ -19,7 +19,7 @@ func _on_gui_input(event):
 		add_child(drag_preview)
 		drag_preview.texture = data.texture
 		drag_preview.set_self_modulate(Color8(255,175,175,255))
-		data.is_placed = true
+		
 	pass 
 
 func _input(event):
@@ -31,6 +31,7 @@ func _input(event):
 			data.draging = false
 			drag_preview.free()
 			on_drag.emit(data)
+			
 	pass # Replace with function body.
 
 
