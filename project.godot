@@ -12,13 +12,13 @@ config_version=5
 
 config/name="clg_prototype"
 config/tags=PackedStringArray("college")
-run/main_scene="res://main.tscn"
+run/main_scene="res://scene/main.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://script/icon.svg"
 
 [autoload]
 
-God="*res://God.gd"
+God="*res://script/God.gd"
 
 [display]
 

@@ -1,8 +1,7 @@
-res://main.tscn
-res://spring.tscn
-res://ball.tscn
-res://cup.tscn
-res://sloat1.gd
-res://OBJ_data/up_left.tres
-res://TileMap.gd
-res://OBJECT.gd
+res://scene/main.tscn
+res://script/sloat.gd
+res://scene/spring.tscn
+res://scene/ball.tscn
+res://scene/cup.tscn
+res://item_list.tscn
+res://script/TileMap.gd

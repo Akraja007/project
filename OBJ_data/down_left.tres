@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="OBJ" load_steps=3 format=3 uid="uid://be3dea3yhlbrh"]
+
+[ext_resource type="Script" path="res://OBJECT.gd" id="1_r7sto"]
+[ext_resource type="Texture2D" uid="uid://d1kqxsexcb88r" path="res://assets/tile008.png" id="2_4jt1i"]
+
+[resource]
+script = ExtResource("1_r7sto")
+texture = ExtResource("2_4jt1i")
+coordinate = Vector2i(0, 2)
+id = 1
