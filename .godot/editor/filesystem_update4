@@ -1,5 +1,4 @@
 res://scene/main.tscn
-res://script/sloat.gd
 res://scene/spring.tscn
 res://scene/ball.tscn
 res://scene/cup.tscn

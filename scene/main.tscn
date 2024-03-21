@@ -27,76 +27,61 @@ texture_region_size = Vector2i(48, 48)
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-0:0/0/custom_data_0 = true
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
-1:0/0/custom_data_0 = true
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
-2:0/0/custom_data_0 = true
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-3:0/0/custom_data_0 = true
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
-0:1/0/custom_data_0 = true
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
-1:1/0/custom_data_0 = true
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-2:1/0/custom_data_0 = true
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
-3:1/0/custom_data_0 = true
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
-0:2/0/custom_data_0 = true
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, 24, 16.0867, -9.54594, 6.89429, 20.8596, 0.176777, -10.9602, -9.01561, 20.5061, -16.4402, -9.54594, -24, 24)
-2:2/0/custom_data_0 = true
 3:2/0 = 0
 3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:2/0/physics_layer_0/angular_velocity = 0.0
 3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
-3:2/0/custom_data_0 = true
 0:3/0 = 0
 0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_0/angular_velocity = 0.0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-0:3/0/custom_data_0 = true
 1:3/0 = 0
 1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_0/angular_velocity = 0.0
 1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
-1:3/0/custom_data_0 = true
 2:3/0 = 0
 2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:3/0/physics_layer_0/angular_velocity = 0.0
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
-2:3/0/custom_data_0 = true
 3:3/0 = 0
 3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:3/0/physics_layer_0/angular_velocity = 0.0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-3:3/0/custom_data_0 = true
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vncyl"]
 scenes/3/scene = ExtResource("2_4v8jc")
@@ -112,7 +97,7 @@ texture_region_size = Vector2i(48, 48)
 [sub_resource type="TileSet" id="TileSet_f7kru"]
 tile_size = Vector2i(48, 48)
 physics_layer_0/collision_layer = 1
-custom_data_layer_0/name = "is_placable"
+custom_data_layer_0/name = "is_not_placable"
 custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_i4prv")
 sources/1 = SubResource("TileSetAtlasSource_td4at")
@@ -196,8 +181,8 @@ text = "ball simulate"
 position = Vector2(384, 290)
 
 [connection signal="body_entered" from="TileMap/cup" to="TileMap/cup" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@21194" to="TileMap/@Area2D@21194" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Area2D@21195" to="TileMap/@Area2D@21195" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@30990" to="TileMap/@Area2D@30990" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@30991" to="TileMap/@Area2D@30991" method="_on_body_entered" flags=18]
 [connection signal="gui_input" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_gui_input"]
 [connection signal="mouse_entered" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_exited"]
