@@ -24,7 +24,6 @@ func _on_gui_input(event):
 
 func _input(event):
 	if data.draging:
-		#on drag preview
 		drag_preview.position=get_local_mouse_position()
 		if event.is_action_released("select"):
 			data.mouse_pos = get_global_mouse_position()
@@ -34,12 +33,10 @@ func _input(event):
 			
 	pass # Replace with function body.
 
-
 func _on_mouse_entered():
 	set_self_modulate(Color8(130,130,130,255))
 
 	pass # Replace with function body.
-
 
 func _on_mouse_exited():
 	set_self_modulate(Color8(255,255,255,255))

@@ -1,5 +1,15 @@
 res://scene/main.tscn
+res://script/sloat.gd
+res://script/TileMap.gd
 res://scene/spring.tscn
 res://scene/ball.tscn
 res://scene/cup.tscn
-res://script/TileMap.gd
+res://ui/main_menu.tscn
+res://ui/main_menu.gd
+res://scene/spick.tscn
+res://scene/spick.gd
+res://script/interactable.gd
+res://scene/endpoint.tscn
+res://script/endpoint.gd
+res://script/spike.gd
+res://script/ball.gd

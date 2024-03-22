@@ -180,6 +180,12 @@ text = "ball simulate"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(384, 290)
 
+[connection signal="body_entered" from="TileMap/spick" to="TileMap/spick" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@125216" to="TileMap/@Area2D@125216" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@125217" to="TileMap/@Area2D@125217" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/endpoint" to="TileMap/endpoint" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@125218" to="TileMap/@Area2D@125218" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@125219" to="TileMap/@Area2D@125219" method="_on_body_entered" flags=18]
 [connection signal="gui_input" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_gui_input"]
 [connection signal="mouse_entered" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Control/Panel/GridContainer/sloat1" to="Control/Panel/GridContainer/sloat1" method="_on_mouse_exited"]

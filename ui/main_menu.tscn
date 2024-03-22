@@ -81,6 +81,7 @@ theme_override_constants/margin_bottom = 10
 layout_mode = 2
 theme_override_colors/font_color = Color(0.913725, 0.768627, 0.415686, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_fxj2f")
+toggle_mode = true
 text = "CREDIT"
 
 [node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]

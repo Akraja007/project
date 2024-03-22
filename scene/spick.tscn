@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmgtoi0dc5ghh"]
+
+[ext_resource type="Script" path="res://script/spike.gd" id="1_adybb"]
+[ext_resource type="Texture2D" uid="uid://6voul4jodrq1" path="res://assets/tile010.png" id="1_ma745"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ewng"]
+size = Vector2(48, 32)
+
+[node name="spick" type="Area2D"]
+script = ExtResource("1_adybb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ma745")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_3ewng")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(24, 24, -24, 24, -18, 0, -8, 22, 0, 0, 8, 22, 17, -1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
