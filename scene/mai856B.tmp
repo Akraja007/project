@@ -1,0 +1,315 @@
+[gd_scene load_steps=26 format=3 uid="uid://c8x2myah6myno"]
+
+[ext_resource type="Texture2D" uid="uid://hwm67h6rhdhj" path="res://asset.png" id="1_uteq3"]
+[ext_resource type="PackedScene" uid="uid://cmgtoi0dc5ghh" path="res://scene/spick.tscn" id="2_2u4y7"]
+[ext_resource type="PackedScene" uid="uid://dgyrkuieracf1" path="res://scene/spring.tscn" id="2_4v8jc"]
+[ext_resource type="PackedScene" uid="uid://dbc14c6xo718k" path="res://scene/endpoint.tscn" id="3_qtcbj"]
+[ext_resource type="Texture2D" uid="uid://dbb8siu773s15" path="res://assets/selecter.png" id="4_sm7jo"]
+[ext_resource type="Script" path="res://script/TileMap.gd" id="4_wvp4v"]
+[ext_resource type="Script" path="res://script/sloat.gd" id="6_ugf3c"]
+[ext_resource type="Script" path="res://OBJECT.gd" id="7_1ltxq"]
+[ext_resource type="Texture2D" uid="uid://bwd6qgimmiwpc" path="res://assets/tile011.png" id="7_ci0yh"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vocav"]
+load_path = "res://.godot/imported/ball.png-1388bb79de1d1a8787b7f73c96559b11.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i4prv"]
+texture = SubResource("CompressedTexture2D_vocav")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_td4at"]
+texture = ExtResource("1_uteq3")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, -24, 24)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, 24, -24, 24)
+2:3/0 = 0
+2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_0/angular_velocity = 0.0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(24, -24, 24, 24, -24, 24)
+3:3/0 = 0
+3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:3/0/physics_layer_0/angular_velocity = 0.0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vncyl"]
+scenes/1/scene = ExtResource("2_2u4y7")
+scenes/3/scene = ExtResource("2_4v8jc")
+scenes/4/scene = ExtResource("3_qtcbj")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xmh0m"]
+texture = ExtResource("4_sm7jo")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_f7kru"]
+tile_size = Vector2i(48, 48)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_i4prv")
+sources/1 = SubResource("TileSetAtlasSource_td4at")
+sources/2 = SubResource("TileSetScenesCollectionSource_vncyl")
+sources/5 = SubResource("TileSetAtlasSource_xmh0m")
+
+[sub_resource type="Resource" id="Resource_m12yy"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_p2p4c"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_87g6p"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_sa1o5"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_4bdup"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_03fhn"]
+load_path = "res://.godot/imported/tile011.png-1792c66a75c74151a6b073326fc0b613.ctex"
+
+[sub_resource type="Resource" id="Resource_hffiw"]
+script = ExtResource("7_1ltxq")
+texture = SubResource("CompressedTexture2D_03fhn")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_dgwnb"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_dflqk"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[sub_resource type="Resource" id="Resource_ai0qx"]
+script = ExtResource("7_1ltxq")
+texture = ExtResource("7_ci0yh")
+coordinate = Vector2i(3, 2)
+id = 1
+
+[node name="main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 13)
+tile_set = SubResource("TileSet_f7kru")
+format = 2
+layer_0/name = "world"
+layer_0/tile_data = PackedInt32Array(262144, 1, 3, 327680, 65537, 1, 327681, 1, 3, 393218, 1, 3, 458754, 65537, 1, 458755, 1, 3, 524292, 1, 3, 589828, 65537, 1, 589829, 1, 3, 196608, 1, 2, 262145, 1, 2, 327682, 65537, 3, 393219, 1, 2, 458756, 65537, 3, 524293, 1, 2, 589830, 65537, 3, 655367, 1, 2, 720903, 1, 3, 720904, 65537, 3, 786441, 131073, 1, 786442, 131073, 1, 786443, 131073, 1, 786444, 131073, 1, 786445, 131073, 1, 786446, 131073, 1, 851983, 131073, 1, 851984, 131073, 1, 917521, 131073, 1, 917522, 131073, 1, 983059, 131073, 1, 983060, 131073, 1, 983061, 131073, 1, 983062, 131073, 1, 983063, 131073, 1, 393216, 65537, 1, 393217, 65537, 1, 458753, 65537, 1, 458752, 65537, 1, 524289, 65537, 1, 524290, 65537, 1, 524291, 65537, 1, 589827, 65537, 1, 720899, 65537, 1, 655363, 65537, 1, 655362, 65537, 1, 589826, 65537, 1, 589825, 65537, 1, 589824, 65537, 1, 524288, 65537, 1, 655360, 65537, 1, 720896, 65537, 1, 786432, 65537, 1, 851968, 65537, 1, 917504, 65537, 1, 983040, 65537, 1, 983041, 65537, 1, 917505, 65537, 1, 851969, 65537, 1, 786433, 65537, 1, 720897, 65537, 1, 655361, 65537, 1, 720898, 65537, 1, 786434, 65537, 1, 851970, 65537, 1, 917506, 65537, 1, 983042, 65537, 1, 983043, 65537, 1, 917507, 65537, 1, 851971, 65537, 1, 786435, 65537, 1, 786436, 65537, 1, 720900, 65537, 1, 655364, 65537, 1, 655365, 65537, 1, 720901, 65537, 1, 786437, 65537, 1, 851973, 65537, 1, 851972, 65537, 1, 917508, 65537, 1, 983044, 65537, 1, 983045, 65537, 1, 917509, 65537, 1, 917510, 65537, 1, 851974, 65537, 1, 786438, 65537, 1, 720902, 65537, 1, 655366, 1, 3, 786439, 65537, 1, 851975, 65537, 1, 917511, 65537, 1, 983047, 65537, 1, 983046, 65537, 1, 983048, 65537, 1, 917512, 65537, 1, 851976, 65537, 1, 786440, 1, 3, 851977, 65537, 1, 917513, 65537, 1, 983049, 65537, 1, 983050, 65537, 1, 917514, 65537, 1, 851978, 65537, 1, 851979, 65537, 1, 917515, 65537, 1, 983051, 65537, 1, 983052, 65537, 1, 917516, 65537, 1, 851980, 65537, 1, 851981, 65537, 1, 917517, 65537, 1, 983053, 65537, 1, 983054, 65537, 1, 917518, 65537, 1, 851982, 65537, 1, 917519, 65537, 1, 983055, 65537, 1, 983056, 65537, 1, 917520, 65537, 1, 983057, 65537, 1, 983058, 65537, 1, 917523, 2, 65536, 917524, 2, 65536, 917525, 2, 65536, 917526, 2, 65536, 917527, 2, 65536)
+layer_1/name = "select"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(393224, 3, 0, 393223, 3, 0, 393222, 3, 0)
+script = ExtResource("4_wvp4v")
+
+[node name="Marker2D" type="Marker2D" parent="TileMap"]
+position = Vector2(256, 73)
+gizmo_extents = 50.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="TileMap"]
+
+[node name="Control" type="Control" parent="TileMap/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Panel" type="Panel" parent="TileMap/CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 165.0
+offset_bottom = 165.0
+
+[node name="GridContainer" type="GridContainer" parent="TileMap/CanvasLayer/Control/Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 157.0
+offset_bottom = 160.0
+columns = 3
+
+[node name="sloat1" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_m12yy")
+
+[node name="sloat2" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_p2p4c")
+
+[node name="sloat3" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_87g6p")
+
+[node name="sloat4" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_sa1o5")
+
+[node name="sloat5" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_4bdup")
+
+[node name="sloat6" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_hffiw")
+
+[node name="sloat7" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_dgwnb")
+
+[node name="sloat8" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_dflqk")
+
+[node name="sloat9" type="TextureRect" parent="TileMap/CanvasLayer/Control/Panel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("7_ci0yh")
+script = ExtResource("6_ugf3c")
+data = SubResource("Resource_ai0qx")
+
+[node name="simulation" type="Button" parent="TileMap/CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 13.0
+offset_right = 289.0
+offset_bottom = 44.0
+toggle_mode = true
+text = "ball simulate"
+
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat1" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat2" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat3" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat4" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat5" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat6" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat7" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat8" method="_on_property_list_changed"]
+[connection signal="gui_input" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" method="_on_gui_input"]
+[connection signal="mouse_entered" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" method="_on_mouse_exited"]
+[connection signal="on_drag" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" to="TileMap" method="_on_sloat_on_drag"]
+[connection signal="property_list_changed" from="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" to="TileMap/CanvasLayer/Control/Panel/GridContainer/sloat9" method="_on_property_list_changed"]
+[connection signal="toggled" from="TileMap/CanvasLayer/Control/simulation" to="TileMap" method="_on_simulation_toggled"]
+[connection signal="body_entered" from="TileMap/spick" to="TileMap/spick" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@50100" to="TileMap/@Area2D@50100" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@50101" to="TileMap/@Area2D@50101" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@50102" to="TileMap/@Area2D@50102" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Area2D@50103" to="TileMap/@Area2D@50103" method="_on_body_entered" flags=18]

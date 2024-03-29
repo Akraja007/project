@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://ui/main_menu.gd" id="1_csryh"]
 [ext_resource type="Texture2D" uid="uid://bvx2orokvdngn" path="res://script/icon.svg" id="1_fss1i"]
-[ext_resource type="PackedScene" uid="uid://c8x2myah6myno" path="res://scene/main.tscn" id="2_sxiy0"]
+[ext_resource type="PackedScene" uid="uid://c8x2myah6myno" path="res://scene/level01.tscn" id="2_sxiy0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7rd8f"]
 font_size = 30
