@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="OBJ" load_steps=3 format=3 uid="uid://byo5kdxmrniib"]
+
+[ext_resource type="Script" path="res://OBJECT.gd" id="1_ugyij"]
+[ext_resource type="Texture2D" uid="uid://bjf5cq11xcsia" path="res://assets/fan.png" id="2_5c27n"]
+
+[resource]
+script = ExtResource("1_ugyij")
+texture = ExtResource("2_5c27n")
+coordinate = Vector2i(0, 0)
+id = 3

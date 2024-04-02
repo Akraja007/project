@@ -15,3 +15,8 @@ modulate = Color(0.913725, 0.768627, 0.415686, 1)
 texture = ExtResource("1_fslti")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 3000
+limit_bottom = 1800
+editor_draw_limits = true

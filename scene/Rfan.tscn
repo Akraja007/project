@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://biga631gh2anq"]
 
-[ext_resource type="Script" path="res://script/fan.gd" id="1_16moh"]
-[ext_resource type="Texture2D" uid="uid://bjf5cq11xcsia" path="res://assets/fan.png" id="2_cmchi"]
+[ext_resource type="Script" path="res://script/fan.gd" id="1_scu1x"]
+[ext_resource type="Texture2D" uid="uid://bjf5cq11xcsia" path="res://assets/fan.png" id="2_hv4lb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_osk2q"]
 size = Vector2(40, 48)
@@ -10,10 +10,10 @@ size = Vector2(40, 48)
 size = Vector2(48, 48)
 
 [node name="fan" type="Area2D"]
-script = ExtResource("1_16moh")
+script = ExtResource("1_scu1x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_cmchi")
+texture = ExtResource("2_hv4lb")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
 

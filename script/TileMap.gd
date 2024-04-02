@@ -18,32 +18,37 @@ func _on_sloat_on_drag(data):
 	var mtile_pos=local_to_map(get_global_mouse_position())
 	if(is_placble(mtile_pos)):
 		match data.id:
-			1:
+			2:
 				var spick = scene[1].instantiate()
 				add_child(spick)
 				spick.position = map_to_local(mtile_pos)
 				data.is_placed=true
-			2:
-				var fan =scene[2].instantiate()
-				add_child(fan)
-				fan.position = map_to_local(mtile_pos)
-				data.is_placed=true
 			3:
+				var rfan =scene[2].instantiate()
+				add_child(rfan)
+				rfan.position = map_to_local(mtile_pos)
+				data.is_placed=true
+			4:
 				var spring =scene[3].instantiate()
 				add_child(spring)
 				spring.position = map_to_local(mtile_pos)
+				data.is_placed=true
+			5:
+				var lfan =scene[4].instantiate()
+				add_child(lfan)
+				lfan.position = map_to_local(mtile_pos)
 				data.is_placed=true
 			_:
 				set_cell(0,mtile_pos,data.id,data.coordinate)
 				data.is_placed=true
 
-func _on_simulation_toggled(button_pressed):
+func on_play_toggled(button_pressed):
 	if button_pressed:
 		var ball=scene[0].instantiate()
 		get_parent().add_child(ball)
 		ball.position = $Marker2D.position
-		$"../CanvasLayer/Control/simulation".queue_free()
-		$"../CanvasLayer/Control".queue_free()
+		$"../CanvasLayer/Control/HBoxContainer/play".set_texture_normal(ResourceLoader.load("res://ui/replay.png"))
+		$"../CanvasLayer/Control/Panel".queue_free()
 		$Camera2D.queue_free( )
 		panmode=false
 	pass # Replace with function body.

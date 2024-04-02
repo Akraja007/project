@@ -19,7 +19,7 @@ func _on_gui_input(event):
 		$"../../..".add_child(drag_preview)
 		drag_preview.position=get_global_mouse_position()
 		drag_preview.texture = data.texture
-		drag_preview.set_self_modulate(Color8(255,175,175,255))
+		drag_preview.set_self_modulate(Color8(130,130,130,255))
 	pass 
 
 func _input(event):

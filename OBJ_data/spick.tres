@@ -7,4 +7,4 @@
 script = ExtResource("1_holhq")
 texture = ExtResource("2_j6156")
 coordinate = Vector2i(0, 0)
-id = 1
+id = 2

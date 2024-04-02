@@ -7,6 +7,5 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.name=="ball":
-		body.set_freeze_mode(true)
-		print("gamer over")
+		get_parent().get_node("../CanvasLayer/Control/CenterContainer").show()
 	pass # Replace with function body.

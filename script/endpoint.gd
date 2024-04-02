@@ -7,7 +7,6 @@ func _ready():
 	
 func _on_body_entered(body):
 	if body.name=="ball":
-		body.set_freeze_enabled(true)
 		print("level over")
 	pass # Replace with function body.
 
